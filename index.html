@@ -3,6 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
+    <title>Black Jack Pro - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            overflow-x: hidden;
+            background-color: #f8f9fa;
+            position: relative;
+        }
+        .header {
+            background-color: #007bff;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            padding-top: 40px;
+            text-align: center;
+        }
+        .games-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .game-block {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        .game-block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .game-title {
+            font-size: 1.5rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .game-description {
+            color: #666;
+            line-height: 1.6;
+        }
+        .game-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 20px;
+            border-radius: 5px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+        .game-link:hover {
+            background-color: #0056b3;
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            z-index: 1;
+        }
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .privacy-policy {
+            margin-top: 10px;
+            color: #ccc;
+        }
+        .privacy-policy a {
+            color: #ccc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .privacy-policy a:hover {
+            text-decoration: underline;
+        }
+        .about {
+            margin-top: 20px;
+            color: #ccc;
+        }
+        .about a {
+            color: #ccc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .about a:hover {
+            text-decoration: underline;
+        }
+        .floating-objects {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
+        .floating {
+            position: absolute;
+            font-size: 3rem;
+            color: #ff6347;
+            animation: float 20s infinite;
+        }
+        .floating:nth-child(2n) {
+            color: #4682b4;
+        }
+        .floating:nth-child(3n) {
+            color: #32cd32;
+        }
+        .floating:nth-child(4n) {
+            color: #ffa500;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(720deg);
+                opacity: 0;
+            }
+=======
     <title>Privacy Policy</title>
     <style>
         body {
@@ -20,10 +166,124 @@
             background-color: #f5f5f5;
             padding: 10px;
             border-radius: 5px;
+>>>>>>> 9e95081425c82b89819f7fd76d4fc5fb9b459e62
         }
     </style>
 </head>
 <body>
+<<<<<<< HEAD
+    <!-- Floating objects for background animation -->
+    <div class="floating-objects"></div>
+
+    <div class="header">
+        <h1>Black Jack Pro</h1>
+        <p>We are passionate game developers. We create small, fun games for everyone!</p>
+    </div>
+
+    <div class="container">
+        <h2>Games</h2>
+        <div class="games-section">
+            <div class="game-block">
+                <h3 class="game-title">Tic Tac Toe</h3>
+                <p class="game-description">A classic game of Tic Tac Toe for hours of fun.</p>
+                <a href="coming-soon.html" class="game-link">Play Now</a>
+            </div>
+            <div class="game-block">
+                <h3 class="game-title">Snake</h3>
+                <p class="game-description">Control the snake to eat apples and grow longer.</p>
+                <a href="coming-soon.html" class="game-link">Play Now</a>
+            </div>
+            <div class="game-block">
+                <h3 class="game-title">Puzzle Blast</h3>
+                <p class="game-description">Solve puzzles and unlock new levels.</p>
+                <a href="coming-soon.html" class="game-link">Play Now</a>
+            </div>
+            <div class="game-block">
+                <h3 class="game-title">Memory Maze</h3>
+                <p class="game-description">Test your memory with different levels of difficulty.</p>
+                <a href="coming-soon.html" class="game-link">Play Now</a>
+            </div>
+            <div class="game-block">
+                <h3 class="game-title">Space Racer</h3>
+                <p class="game-description">Race through the galaxy in your private space ship</p>
+                <a href="coming-soon.html" class="game-link">Play Now</a>
+            </div>
+            <div class="game-block">
+                <h3 class="game-title">Craxy Computer</h3>
+                <p class="game-description">You never know what secrets your computer holds</p>
+                <a href="coming-soon.html" class="game-link">Play Now</a>
+            </div>
+            <div class="game-block">
+                <h3 class="game-title">Treasure Hunt</h3>
+                <p class="game-description">Explore the map to to find treasures. </p>
+                <a href="coming-soon.html" class="game-link">Play Now</a>
+            </div>
+            <div class="game-block">
+                <h3 class="game-title">Genius Genie</h3>
+                <p class="game-description">You have 3 wishes. Be careful what you wish for</p>
+                <a href="coming-soon.html" class="game-link">Play Now</a>
+            </div>
+            <div class="game-block">
+                <h3 class="game-title">Tic Tac Toe UNLIMITED</h3>
+                <p class="game-description">The classic game with a twist!</p>
+                <a href="coming-soon.html" class="game-link">Play Now</a>
+            </div>
+            <div class="game-block">
+                <h3 class="game-title">Bug Hunter</h3>
+                <p class="game-description">Debug the bug before your program crashs!</p>
+                <a href="coming-soon.html" class="game-link">Play Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer with copyright and links -->
+    <div class="footer">
+        <p>&copy; 2024 Black Jack Pro. All rights reserved.</p>
+        <div class="privacy-policy">
+            <a href="privacy.html">Privacy Policy</a>
+        </div>
+        <div class="about">
+            <a href="about-us.html">About Us</a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const floatingObjects = document.querySelector(".floating-objects");
+            const numObjects = 50; // Number of floating objects
+
+            // Create floating objects
+            for (let i = 0; i < numObjects; i++) {
+                const floating = document.createElement("div");
+                floating.textContent = i % 2 === 0 ? "X" : "O";
+                floating.className = "floating";
+                floating.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+                floating.style.top = `${Math.random() * 100}vh`; // Random vertical position
+                floatingObjects.appendChild(floating);
+            }
+
+            // Function to animate floating objects
+            function animateFloatingObjects() {
+                const floatElements = document.querySelectorAll(".floating");
+
+                floatElements.forEach(function(element) {
+                    // Randomize animation duration
+                    const animationDuration = (Math.random() * 15 + 5) + "s";
+                    element.style.animation = `float ${animationDuration} infinite`;
+
+                    // Randomize initial animation delay
+                    const animationDelay = Math.random() * 5 + "s";
+                    element.style.animationDelay = `-${animationDelay}`;
+                });
+            }
+
+            animateFloatingObjects(); // Initial animation setup
+
+            // Re-run animation setup periodically to handle continuous page transitions
+            setInterval(animateFloatingObjects, 30000); // Adjust interval as needed
+        });
+    </script>
+=======
     <h1>Privacy Policy</h1>
     <p><strong>Black Jack Pro</strong> respects the privacy of its users and is committed to protecting their personal information. This Privacy Policy outlines how <strong>Black Jack Pro</strong> collects, uses, maintains, and discloses information collected from users of our Android applications.</p>
 
@@ -44,5 +304,6 @@
 
     <h2>Contact Us</h2>
     <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:go4raj@gmail.com">BlackJackPro eMail</a>.</p>
+>>>>>>> 9e95081425c82b89819f7fd76d4fc5fb9b459e62
 </body>
 </html>

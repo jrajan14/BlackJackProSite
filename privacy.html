@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 20px;
+            background-color: #f8f9fa;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            position: relative; /* Ensure relative positioning for floating objects */
+            z-index: 1; /* Set higher z-index to keep above floating objects */
+        }
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .link {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .link:hover {
+            text-decoration: underline;
+        }
+        .floating-objects {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
+        .floating {
+            position: absolute;
+            font-size: 3rem; /* Larger font size */
+            color: #ff6347; /* Brighter red */
+            animation: float 20s infinite; /* Increased animation duration */
+        }
+        .floating:nth-child(2n) {
+            color: #4682b4; /* Brighter blue */
+        }
+        .floating:nth-child(3n) {
+            color: #32cd32; /* Brighter green */
+        }
+        .floating:nth-child(4n) {
+            color: #ffa500; /* Brighter orange */
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating objects for background animation -->
+    <div class="floating-objects"></div>
+
+    <div class="container">
+        <h1>Privacy Policy</h1>
+        <p><strong>Black Jack Pro</strong> respects the privacy of its users and is committed to protecting their personal information. This Privacy Policy outlines how <strong>Black Jack Pro</strong> collects, uses, maintains, and discloses information collected from users of our Android applications.</p>
+
+        <h2>Information Collection</h2>
+        <p><strong>Black Jack Pro</strong> does not collect any personal information from users of our Android applications.</p>
+
+        <h2>Information Usage</h2>
+        <p>Our Android applications do not collect or store any personal information. Therefore, we do not use any information collected for any purpose.</p>
+
+        <h2>Third-Party Services</h2>
+        <p>Our Android applications may contain links to third-party websites or services. These third-party sites have their own privacy policies, and we are not responsible for the content or practices of these sites.</p>
+
+        <h2>Security</h2>
+        <p>We have implemented appropriate technical and organizational measures to safeguard the information we collect in our Android applications. However, please note that no method of transmission over the internet or electronic storage is 100% secure.</p>
+
+        <h2>Changes to this Privacy Policy</h2>
+        <p><strong>Black Jack Pro</strong> may update this Privacy Policy from time to time. We will notify users of any changes by posting the new Privacy Policy on this page.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have any questions about this Privacy Policy, please contact us at <a href="mailto:j.rajan14@yahoo.com" class="link">BlackJackPro eMail</a>.</p>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

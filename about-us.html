@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Black Jack Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            color: #333;
+            margin: 0;
+            background-color: #f8f9fa;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h1 {
+            color: #007bff;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .floating-objects {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 0;
+        }
+        .floating {
+            position: absolute;
+            font-size: 3rem;
+            color: #ff6347;
+            animation: float 20s infinite;
+        }
+        .floating:nth-child(2n) {
+            color: #4682b4;
+        }
+        .floating:nth-child(3n) {
+            color: #32cd32;
+        }
+        .floating:nth-child(4n) {
+            color: #ffa500;
+        }
+        @keyframes float {
+            0% {
+                transform: translateY(100vh) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(720deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Floating objects for background animation -->
+    <div class="floating-objects"></div>
+
+    <div class="container">
+        <h1>About Us</h1>
+        <p>Black Jack Pro is an independent game development initiative fueled by passionate individuals dedicated to creating small, yet impactful games that bring joy and entertainment to players worldwide.</p>
+        <p>Our mission is to craft unique and creative game designs that challenge and engage players of all ages.</p>
+        <p>Stay connected with us as we continue to grow and expand our portfolio of games!</p>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const floatingObjects = document.querySelector(".floating-objects");
+            const numObjects = 50; // Number of floating objects
+
+            // Create floating objects
+            for (let i = 0; i < numObjects; i++) {
+                const floating = document.createElement("div");
+                floating.textContent = i % 2 === 0 ? "X" : "O";
+                floating.className = "floating";
+                floating.style.left = `${Math.random() * 100}vw`; // Random horizontal position
+                floating.style.top = `${Math.random() * 100}vh`; // Random vertical position
+                floatingObjects.appendChild(floating);
+            }
+
+            // Function to animate floating objects
+            function animateFloatingObjects() {
+                const floatElements = document.querySelectorAll(".floating");
+
+                floatElements.forEach(function(element) {
+                    // Randomize animation duration
+                    const animationDuration = (Math.random() * 15 + 5) + "s";
+                    element.style.animation = `float ${animationDuration} infinite`;
+
+                    // Randomize initial animation delay
+                    const animationDelay = Math.random() * 5 + "s";
+                    element.style.animationDelay = `-${animationDelay}`;
+                });
+            }
+
+            animateFloatingObjects(); // Initial animation setup
+
+            // Re-run animation setup periodically to handle continuous page transitions
+            setInterval(animateFloatingObjects, 30000); // Adjust interval as needed
+        });
+    </script>
+</body>
+</html>
